@@ -1,0 +1,51 @@
+title,author,publishedYear
+Clean Code,Robert C Martin,2008
+Effective Java,Joshua Bloch,2018
+Design Patterns,Erich Gamma,1994
+Refactoring,Martin Fowler,1999
+The Pragmatic Programmer,Andrew Hunt,1999
+Head First Java,Kathy Sierra,2005
+Java Concurrency in Practice,Brian Goetz,2006
+Spring in Action,Craig Walls,2018
+Microservices Patterns,Chris Richardson,2018
+Clean Architecture,Robert C Martin,2017
+Domain Driven Design,Eric Evans,2003
+You Don’t Know JS,Kyle Simpson,2015
+Eloquent JavaScript,Marijn Haverbeke,2018
+JavaScript The Good Parts,Douglas Crockford,2008
+Node.js Design Patterns,Mario Casciaro,2020
+Learning React,Alex Banks,2020
+Pro Git,Scott Chacon,2014
+The Mythical Man Month,Fred Brooks,1975
+Code Complete,Steve McConnell,2004
+Cracking the Coding Interview,Gayle Laakmann,2015
+Algorithms,Robert Sedgewick,2011
+Introduction to Algorithms,Thomas Cormen,2009
+Grokking Algorithms,Aditya Bhargava,2016
+Operating System Concepts,Abraham Silberschatz,2018
+Computer Networks,Andrew Tanenbaum,2010
+Database System Concepts,Abraham Silberschatz,2019
+SQL Performance Explained,Markus Winand,2012
+Learning SQL,Alan Beaulieu,2020
+Python Crash Course,Eric Matthes,2019
+Fluent Python,Luciano Ramalho,2015
+Automate the Boring Stuff,Al Sweigart,2019
+Deep Learning,Ian Goodfellow,2016
+Hands On Machine Learning,Aurelien Geron,2019
+Artificial Intelligence,A Stuart Russell,2016
+Data Science from Scratch,Joel Grus,2019
+Big Data Principles,Nathan Marz,2015
+Cloud Native Java,Josh Long,2017
+Kubernetes Up and Running,Kelsey Hightower,2019
+Docker Deep Dive,Nigel Poulton,2020
+Site Reliability Engineering,Betsy Beyer,2016
+System Design Interview,Alex Xu,2020
+Designing Data Intensive Applications,Martin Kleppmann,2017
+Software Engineering at Google,Titus Winters,2020
+Continuous Delivery,Jez Humble,2010
+Test Driven Development,Kent Beck,2002
+Extreme Programming Explained,Kent Beck,2004
+Agile Estimating and Planning,Mike Cohn,2005
+The Clean Coder,Robert C Martin,2011
+Working Effectively with Legacy Code,Michael Feathers,2004
+Release It,Michael Nygard,
