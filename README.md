@@ -32,13 +32,13 @@ This project was created to demonstrate clean backend architecture, clear separa
 
 ## Project Structure
 
-controllers/ # Handles request and response logic
-routes/ # API route definitions
-services/ # Business logic
-utils/ # Utility functions (CSV parser)
-middleware/ # Error handling middleware
-app.ts # Express app configuration
-server.ts # Server entry point
+-controllers/ # Handles request and response logic
+-routes/ # API route definitions
+-services/ # Business logic
+-utils/ # Utility functions (CSV parser)
+-middleware/ # Error handling middleware
+-app.ts # Express app configuration
+-server.ts # Server entry point
 
 
 ---
