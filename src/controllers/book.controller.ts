@@ -16,8 +16,30 @@ export const BookController = {
 
   create(req: Request, res: Response) {
     const { title, author, publishedYear } = req.body;
+
+    // Step 1: Validate input
+    if (!title || !author || !publishedYear) {
+      return res.status(400).json({ message: "All fields are required" });
+    }
+
+    // Step 2: Check for duplicate
+    const existingBook = BookService.getAll().find(
+      (book) =>
+        book.title === title &&
+        book.author === author &&
+        book.publishedYear === publishedYear
+    );
+
+    if (existingBook) {
+      return res.status(409).json({
+        message: "Book already exists",
+      });
+    }
+
+    // Step 3: Create book
     const book = BookService.create({ title, author, publishedYear });
-    res.status(201).json(book);
+
+    return res.status(201).json(book);
   },
 
   update(req: Request, res: Response) {
@@ -39,11 +61,23 @@ export const BookController = {
 
     const result = parseCSV(req.file.buffer.toString());
 
-    result.validBooks.forEach(b => BookService.create(b));
+    const addedBooks = [];
+    result.validBooks.forEach((b) => {
+      const existingBook = BookService.getAll().find(
+        (book) =>
+          book.title === b.title &&
+          book.author === b.author &&
+          book.publishedYear === b.publishedYear
+      );
+
+      if (!existingBook) {
+        addedBooks.push(BookService.create(b));
+      }
+    });
 
     res.json({
-      added: result.validBooks.length,
-      errors: result.errors
+      added: addedBooks.length,
+      errors: result.errors,
     });
-  }
+  },
 };
