@@ -54,17 +54,17 @@ This project was created to demonstrate clean backend architecture, clear separa
 
 ### Installation
 
-1. Clone the repository
+1. Clone the repository<br>
+[text](https://github.com/Prakashpradhangit/Book-Management-REST-API.git)
 
-
-2. Install dependencies
+2. Install dependencies<br>
 npm install
 
 
-3. Create a `.env` file in the root directory
+3. Create a `.env` file in the root directory<br>
 PORT=3000
 
-4. Start the development server
+4. Start the development server<br>
 npm run dev
 
 
@@ -88,6 +88,7 @@ npm run dev
 | Method | Endpoint | Description |
 |------|--------|------------|
 | POST | /books/import | Import books using CSV |
+
 
 ---
 
