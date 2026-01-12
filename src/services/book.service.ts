@@ -1,7 +1,6 @@
 import { Book } from "../models/book.model";
-import { randomUUID } from "crypto";
 
-
+let currentId = 1;
 
 const books: Book[] = [];
 
@@ -10,14 +9,14 @@ export const BookService = {
 
   getById: (id: string) => books.find(b => b.id === id),
 
- create: (data: Omit<Book, "id">): Book => {
-  const book: Book = {
-    id: randomUUID(),
-    ...data
-  };
-  books.push(book);
-  return book;
-},
+  create: (data: Omit<Book, "id">): Book => {
+    const book: Book = {
+      id: (currentId++).toString(),
+      ...data
+    };
+    books.push(book);
+    return book;
+  },
 
   update: (id: string, data: Partial<Book>) => {
     const index = books.findIndex(b => b.id === id);
