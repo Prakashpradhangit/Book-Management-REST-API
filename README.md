@@ -40,7 +40,6 @@ This project was created to demonstrate clean backend architecture, clear separa
 - app.ts # Express app configuration
 - server.ts # Server entry point
 
-
 ---
 
 ## Getting Started
@@ -55,19 +54,16 @@ This project was created to demonstrate clean backend architecture, clear separa
 ### Installation
 
 1. Clone the repository<br>
-[text](https://github.com/Prakashpradhangit/Book-Management-REST-API.git)
+   https://github.com/Prakashpradhangit/Book-Management-REST-API.git
 
 2. Install dependencies<br>
-npm install
-
+   npm install
 
 3. Create a `.env` file in the root directory<br>
-PORT=3000
+   PORT=3000
 
 4. Start the development server<br>
-npm run dev
-
-
+   npm run dev
 
 ---
 
@@ -75,20 +71,63 @@ npm run dev
 
 ### Books
 
-| Method | Endpoint | Description |
-|------|--------|------------|
-| GET | /books | Get all books |
-| GET | /books/:id | Get book by ID |
-| POST | /books | Create a new book |
-| PUT | /books/:id | Update a book |
-| DELETE | /books/:id | Delete a book |
+| Method | Endpoint   | Description       |
+| ------ | ---------- | ----------------- |
+| GET    | /books     | Get all books     |
+| GET    | /books/:id | Get book by ID    |
+| POST   | /books     | Create a new book |
+| PUT    | /books/:id | Update a book     |
+| DELETE | /books/:id | Delete a book     |
 
 ### Bulk Import
 
-| Method | Endpoint | Description |
-|------|--------|------------|
-| POST | /books/import | Import books using CSV |
+| Method | Endpoint      | Description            |
+| ------ | ------------- | ---------------------- |
+| POST   | /books/import | Import books using CSV |
 
+---
+
+### GET
+Get All Books <br>
+localhost:4000/books <br>
+Its provide you all book from the list <br>
+
+
+### PUT
+Update Book By ID <br>
+localhost:4000/books/b4df81da-40fc-438c-954b-901d65d3eabc <br>
+While requesting through id kindly change into valid id present in the data <br>
+Body<br>
+raw (json)<br>
+json
+{   "title":"Data Structure and algorthim"
+    "author":"Prakash"
+    "publishedYear":2025
+    
+}
+
+### GET
+Get Books By ID<br>
+localhost:4000/books/{id}<br>
+While requesting through id kindly change into valid id present in the data<br>
+raw (json)<br>
+json
+{
+    "title":"Advance java",
+    "author":"Prakash Pradhan",
+    "publishedYear":"2026"
+}
+
+
+### DELETE
+Delete Book By ID<br>
+localhost:4000/books/{id}<br>
+While requesting through id kindly change into valid id present in the data<br>
+
+
+### POST
+localhost:4000/books/import<br>
+Import Books From CSV<br>
 
 ---
 
@@ -105,3 +144,4 @@ title,author,publishedYear
 Core Java,Prakash,2001
 Advanced Java,Prakash,2002
 
+```
