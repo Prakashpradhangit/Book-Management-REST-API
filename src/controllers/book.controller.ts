@@ -11,6 +11,7 @@ export const BookController = {
     const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
     const book = BookService.getById(id);
     if (!book) return res.status(404).json({ message: "Book not found" });
+    res.json({ message: "sucess", book });
     res.json(book);
   },
 
@@ -38,7 +39,7 @@ export const BookController = {
 
     // Step 3: Create book
     const book = BookService.create({ title, author, publishedYear });
-
+    
     return res.status(201).json(book);
   },
 
@@ -46,14 +47,15 @@ export const BookController = {
     const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
     const book = BookService.update(id, req.body);
     if (!book) return res.status(404).json({ message: "Book not found" });
-    res.json(book);
+    res.json({ message: "Book updated successfully", book });
   },
 
   delete(req: Request, res: Response) {
     const id = Array.isArray(req.params.id) ? req.params.id[0] : req.params.id;
     const deleted = BookService.delete(id);
+    
     if (!deleted) return res.status(404).json({ message: "Book not found" });
-    res.status(204).send();
+    res.status(200).json({ message: "Book deleted successfully" });
   },
 
   importCSV(req: Request, res: Response, next: NextFunction) {
