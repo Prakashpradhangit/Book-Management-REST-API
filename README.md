@@ -95,7 +95,7 @@ Its provide you all book from the list <br>
 
 ### PUT
 Update Book By ID <br>
-localhost:4000/books/b4df81da-40fc-438c-954b-901d65d3eabc <br>
+localhost:4000/books/<br>
 While requesting through id kindly change into valid id present in the data <br>
 Body<br>
 raw (json)<br>

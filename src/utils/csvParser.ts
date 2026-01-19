@@ -51,7 +51,7 @@ export function parseCSV(data: string) {
       return;
     }
 
-    
+  
     const yearNum = Number(publishedYearStr);
     if (isNaN(yearNum)) {
       errors.push({
