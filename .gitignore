@@ -4,3 +4,4 @@ gitignore
 .env
 a.java
 test.js
+details.ts
