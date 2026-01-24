@@ -86,9 +86,9 @@ export const BookController = {
         return res.status(404).json({
           msg: "Book not found"
         });
+      }else{
+        return res.status(200).json({msg:`book deleted sucessfully with id ${id}`})
       }
-
-      return res.json(data)
     })
   },
 
