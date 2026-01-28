@@ -100,11 +100,14 @@ While requesting through id kindly change into valid id present in the data <br>
 Body<br>
 raw (json)<br>
 json
-{   "title":"Data Structure and algorthim"
+```
+{
+   "title":"Data Structure and algorthim"
     "author":"Prakash"
     "publishedYear":2025
     
 }
+```
 
 ### GET
 Get Books By ID<br>
@@ -112,12 +115,13 @@ localhost:4000/books/{id}<br>
 While requesting through id kindly change into valid id present in the data<br>
 raw (json)<br>
 json
+```
 {
     "title":"Advance java",
     "author":"Prakash Pradhan",
     "publishedYear":"2026"
 }
-
+```
 
 ### DELETE
 Delete Book By ID<br>
